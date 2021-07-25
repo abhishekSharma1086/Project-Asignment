@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:rgba(255, 255, 255, 0.2);
+        }
+        .body{
+            color: #4B4B4B;
+            width: 90%;
+            margin: 20px 60px 0 60px;
+            height: 600px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .head{
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            box-shadow: 0 2px 5px #808080;
+            background: #fff;
+            width: 100%;
+            height: 120px;
+        }
+        .box{
+            width: 600px;
+            margin: 10px;
+        }
+        h1{
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+            color: #4B4B4B;
+            font-weight: 400;
+            margin-top: 45px;
+            margin-left: 100px;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            color: #4B4B4B;
+            padding-right: 50px;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+        #logo{
+            margin: 36px 0 0 50px;
+            width: 180px;
+            height: 38px;
+        }
+        nav{
+            float: right;
+            margin-right: 40px;
+            margin-top: 45px;
+        }
+        .navbar{
+            font-size: 15px;
+            font-weight: bolder;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 36px;
+            transition: 0.1s;
+        }
+        .navbar a{
+            text-decoration: none;
+            color: #4B4B4B;
+        }
+        .navbar a:hover{
+            color: #4E71E9;
+        }
+
+        /*body part*/
+        #section4{
+            margin-top: 130px;
+            height: 450px;
+            display: block;
+        }
+        #section4 .section4_box{
+            margin: 0 0 0 80px; 
+            display: flex;
+            height: 320px;
+            justify-content: space-around;
+        }
+        
+        #section4 .section4_box h4{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin-top: 16px;
+        }
+        #section4 .section4_box p{
+            margin-left: 60px;
+            font-size: 14px;
+        }
+        #section4 .section4_box i{
+            margin-top: 20px;
+            margin-left: 60px;
+            text-align: center;
+            padding: 8px 0 0 5px;
+            border: 1px solid black;
+            color:#4E71E9;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+        }
+        #section4 .section4_box .box{
+            border: none;
+        }
+        #section4 .section4_box .box:hover{
+            border: 1px solid #808080;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px #808080;
+        }
+
+        /*footer part styling*/
+        .foot{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: #F7F7F8;
+            flex-direction: row;
+            margin-top: 100px;
+        }
+        .foot .box{
+            margin-left: 20px;
+            
+        }
+        .foot .box a{
+            text-decoration: none;
+            color:#4B4B4B
+        }
+        .foot .box a:hover{
+            color:#4E71E9;
+        }
+
+        .foot .box p{
+            padding-left: 30px;
+            margin-left: 0;
+            font-size: 14px; ;
+        }
+        #box1 p{
+            margin-left: 80px;
+            padding-left: 30px;
+            font-size: 11px; ;
+        }
+        #box2 ul{
+            font-size: 12px;
+            padding-left: 30px;
+            text-decoration: dashed;
+            list-style: none;
+        }
+        .foot #box3 i{
+            margin-top: 30px;
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 25px;
+            text-align: center;
+            color:#4E71E9;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #4E71E9;
+            border-radius: 50%;
+        }
+        .foot #box3 i:hover{
+            color: white;
+            background:#4E71E9;
+        }
+        #contact_link{
+            margin-left: 20px;
+        }
+        #contact_link a{
+            font-size: 11px;
+            width: 0;
+        }
+        #contact_link a:hover{
+            color:#4E71E9;
+            width: 20px;
+        }
+
+        /*------------------responsive site----------------------*/
+        @media only screen and (max-width: 798px) {
+        .body{
+            color: #4B4B4B;
+            width: 90%;
+            margin: 20px 60px 0 60px;
+            height: 600px;
+        }
+        .head{
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            box-shadow: 0 2px 5px #808080;
+            background: #fff;
+            width: 100%;
+            height: 120px;
+        }
+        .box{
+            width: 600px;
+            margin: 10px;
+        }
+        h1{
+            font-size: 50px;
+            font-family: 'Poppins', sans-serif;
+            color: #4B4B4B;
+            font-weight: 400;
+            margin-top: 45px;
+            margin-left: 100px;
+        }
+        p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            color: #4B4B4B;
+            padding-right: 50px;
+            margin-top: 10px;
+            margin-left: 100px;
+        }
+        #logo{
+            margin: 36px 0 0 50px;
+            width: 180px;
+            height: 38px;
+        }
+        nav{
+            float: right;
+            margin-right: 40px;
+            margin-top: 45px;
+            
+        }
+        
+
+        /*body part*/
+        #section4{
+            margin-top: 130px;
+            height: 450px;
+            display: block;
+        }
+        #section4 .section4_box{
+            margin: 0 0 0 80px; 
+            display: flex;
+            height: 320px;
+            flex-direction: column;
+        }
+        
+        #section4 .section4_box h4{
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            margin-top: 16px;
+        }
+        #section4 .section4_box p{
+            margin-left: 60px;
+            font-size: 14px;
+        }
+        #section4 .section4_box i{
+            margin-top: 20px;
+            margin-left: 60px;
+            text-align: center;
+            padding: 8px 0 0 5px;
+            border: 1px solid black;
+            color:#4E71E9;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+        }
+        #section4 .section4_box .box{
+            border: none;
+        }
+        #section4 .section4_box .box:hover{
+            border: 1px solid #808080;
+            border-radius: 20px;
+            box-shadow: 5px 5px 5px #808080;
+        }
+
+        /*footer part styling*/
+        .foot{
+            width: 100%;
+            height: 200px;
+            display: flex;
+            background-color: #F7F7F8;
+            flex-direction: row;
+            margin-top: 100px;
+        }
+        .foot .box{
+            margin-left: 20px;
+            
+        }
+        .foot .box a{
+            text-decoration: none;
+            color:#4B4B4B
+        }
+        .foot .box a:hover{
+            color:#4E71E9;
+        }
+
+        .foot .box p{
+            padding-left: 30px;
+            margin-left: 0;
+            font-size: 14px; ;
+        }
+        #box1 p{
+            margin-left: 80px;
+            padding-left: 30px;
+            font-size: 11px; ;
+        }
+        #box2 ul{
+            font-size: 12px;
+            padding-left: 30px;
+            text-decoration: dashed;
+            list-style: none;
+        }
+        .foot #box3 i{
+            margin-top: 30px;
+            margin-left: 20px;
+            padding-top: 10px;
+            font-size: 25px;
+            text-align: center;
+            color:#4E71E9;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #4E71E9;
+            border-radius: 50%;
+        }
+        .foot #box3 i:hover{
+            color: white;
+            background:#4E71E9;
+        }
+        #contact_link{
+            margin-left: 20px;
+        }
+        #contact_link a{
+            font-size: 11px;
+            width: 0;
+        }
+        #contact_link a:hover{
+            color:#4E71E9;
+            width: 20px;
+        }  
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <img id="logo" src="photo/nmlogo.png" alt="company logo">
+        <nav>
+            <span class="navbar"><a href="Home.html">Home</a></span>
+            <span class="navbar"><a href="./about_us.html">About</a></span>
+            <span class="navbar"><a href="./contact.html">Contact</a></span>
+            <span class="navbar"><a href="./services.html">Services</a></span>
+            <span class="navbar"><a href="./clients.html">Clients</a></span>
+        </nav>
+    </header>
+    <main>
+        <section class="body" id="section4">
+            <h1>Our services.</h1>
+            <div class="section4_box">
+                <div class="box" id="box1">
+                    <i class="fab fa-product-hunt"></i>
+                    <h4>Product development</h4>
+                    <p>Do you have an amazing cloud or tech business idea? Our services are focused on providing 
+                    end to end services including analysis, research, designing, and development. In true sense, turning ideas into technology.</p>
+                </div>
+                <div class="box" id="box2">
+                    <i class="fas fa-mobile"></i>
+                    <h4>Mobile app development</h4>
+                    <p>
+                        Business today are looking for smarter ways to work.Enterprises are moving towards mobile apps for improved efficiency, productivity, customer engagement, and workforce collaboration.
+                    </p>
+                </div>
+                <div class="box" id="box3">
+                    <i class="fas fa-blog"></i>
+                    <h4>Website development</h4>
+                    <p>In today's digital age, your website is the most important tool at your disposal. Prospects invariably look up websites before making decisions.</p>
+                </div>
+            </div>   
+        </section>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="box" id="box1">
+                <img src="photo/nmlogo.png" alt="company logo" style="width: 150px; height: 30px; margin-left: 100px;">
+               <p>Narmware Software Solutions Pvt. Ltd is an ISO 9001: 2015 registered company established
+                    in the year 2016. We are headquartered at office 15A, A-building, Downtown City Vista, Fountain Road, Kharadi, Pune, MH, IN 411014.</p>
+            </div>
+            <div class="box" id="box2">
+                <p>Useful Links</p>
+                <ul>
+                    <li><a href="./Home.html">-Home</a></li>
+                    <li><a href="./about_us.html">-About us</a></li>
+                    <li><a href="/clients.html">-Our Client</a></li>
+                </ul>
+            </div>
+            <div class="box" id="box3">
+                <p>Contact and Policy</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div id="contact_link">
+                    <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a> | <a href="/contact.html">Contact us</a><br>
+                     <a href="#">T & C</a> | <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
